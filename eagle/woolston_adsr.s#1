@@ -14723,6 +14723,9 @@ drill 1.1 mm</description>
 <part name="C5" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="P-2" library="supply1" deviceset="-12V" device=""/>
+<part name="C6" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
+<part name="C8" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14785,9 +14788,12 @@ drill 1.1 mm</description>
 <instance part="GND8" gate="1" x="165.1" y="10.16"/>
 <instance part="C4" gate="G$1" x="58.42" y="20.32"/>
 <instance part="C5" gate="G$1" x="58.42" y="7.62"/>
-<instance part="IC1" gate="P" x="12.7" y="88.9"/>
-<instance part="P+5" gate="1" x="12.7" y="101.6"/>
-<instance part="P-2" gate="1" x="12.7" y="76.2"/>
+<instance part="IC1" gate="P" x="10.16" y="86.36"/>
+<instance part="P+5" gate="1" x="10.16" y="101.6"/>
+<instance part="P-2" gate="1" x="10.16" y="71.12"/>
+<instance part="C6" gate="G$1" x="15.24" y="93.98"/>
+<instance part="C8" gate="G$1" x="15.24" y="81.28"/>
+<instance part="GND9" gate="1" x="22.86" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -14839,7 +14845,11 @@ drill 1.1 mm</description>
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
-<wire x1="12.7" y1="99.06" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="99.06" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="96.52" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<junction x="10.16" y="96.52"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -14859,7 +14869,11 @@ drill 1.1 mm</description>
 <segment>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="P-2" gate="1" pin="-12V"/>
-<wire x1="12.7" y1="78.74" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="73.66" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="76.2" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+<junction x="10.16" y="76.2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14919,6 +14933,16 @@ drill 1.1 mm</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="205.74" y1="17.78" x2="205.74" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="22.86" y1="78.74" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="83.82" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="86.36" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="86.36" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<junction x="15.24" y="86.36"/>
 </segment>
 </net>
 <net name="N$12" class="0">

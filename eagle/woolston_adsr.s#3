@@ -14709,7 +14709,7 @@ drill 1.1 mm</description>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="33k"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="10k"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-7" value="1N4148DO35-7"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0207/10" value="4k7"/>
 <part name="LFO_SW_1" library="solpad" deviceset="LSP11" device=""/>
 <part name="LFO_SW_2" library="solpad" deviceset="LSP11" device=""/>

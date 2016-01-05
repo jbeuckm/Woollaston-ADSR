@@ -4,7 +4,7 @@
 (This file generated from the board:)
 (.../Woollaston-ADSR/eagle/woolston_adsr.brd)
 (Current profile is .../pcbgcode.repo/profiles/mach.pp  )
-(This file generated 1/1/16 1:21 AM)
+(This file generated 1/1/16 9:39 PM)
 (Settings from pcb-machine.h)
 (spindle on time = 0.0000)
 (spindle speed = 15000.0000)
